@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HQLExample.iml" filepath="$PROJECT_DIR$/.idea/HQLExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HQLClient.iml" filepath="$PROJECT_DIR$/.idea/HQLClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/main/java/main.iml" filepath="$PROJECT_DIR$/src/main/java/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/main/main1.iml" filepath="$PROJECT_DIR$/src/main/main1.iml" />
     </modules>
   </component>
 </project>
