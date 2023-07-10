@@ -4,8 +4,6 @@ package de.jgsoftwares.hql.model.demodb;
 import javax.persistence.*;
 
 
-@Entity
-@Table(name = "WEBTEXTLAYOUT", schema = "PUBLIC", catalog = "DEMODB")
 public class Webtextlayout
 {
 
