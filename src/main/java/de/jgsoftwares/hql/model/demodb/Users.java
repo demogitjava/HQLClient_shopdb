@@ -1,12 +1,14 @@
 package de.jgsoftwares.hql.model.demodb;
 
 
+import java.io.Serializable;
 import javax.persistence.*;
 
-
-@Entity
-@Table(name = "Users", schema = "PUBLIC", catalog = "DEMODB")
-public class Users
+/**
+ *
+ * @author hoscho
+ */
+public class Users implements Serializable
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
