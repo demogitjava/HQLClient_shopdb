@@ -1,5 +1,6 @@
 package de.jgsoftwares.hql;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -33,5 +34,18 @@ public class HibernateUtil {
 	public static SessionFactory getSessionFactory() {
 		if(sessionFactory == null) sessionFactory = buildSessionFactory();
         return sessionFactory;
+    }
+        
+    public HibernateUtil()
+    {
+        
+      
+    }
+    
+    public Session openSession()
+    {
+        Session session = de.jgsoftwares.hql.HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        return session;
     }
 }

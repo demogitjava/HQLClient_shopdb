@@ -1,0 +1,42 @@
+package de.jgsoftwares.hql.model.mawi;
+
+import javax.persistence.*;
+
+
+@Entity
+@Table(name = "Belegarten", schema = "PUBLIC", catalog = "MAWI")
+public class Belegarten
+{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+
+    private String belegart;
+
+    private Long belegnummernkreis;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getBelegart() {
+        return belegart;
+    }
+
+    public void setBelegart(String belegart) {
+        this.belegart = belegart;
+    }
+
+    public Long getBelegnummernkreis() {
+        return belegnummernkreis;
+    }
+
+    public void setBelegnummernkreis(Long belegnummernkreis) {
+        this.belegnummernkreis = belegnummernkreis;
+    }
+}

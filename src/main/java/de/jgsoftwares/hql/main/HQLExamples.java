@@ -28,11 +28,7 @@ public class HQLExamples
             {
                 System.out.print("LookAndFeel Error Nimbus !");
             }//Prep work
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.getCurrentSession();
 		
-		//Get All Employees
-		Transaction tx = session.beginTransaction();
                 
                 de.jgsoftwares.hql.main.JFrame jframe = new de.jgsoftwares.hql.main.JFrame();
               
