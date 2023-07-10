@@ -8,8 +8,6 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
 
-@Entity
-@Table(name = "useragent")
 public class Useragent
 {
 
