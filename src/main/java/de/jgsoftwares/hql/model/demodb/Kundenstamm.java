@@ -15,8 +15,6 @@ import javax.persistence.Table;
  * @author hoscho
  */
 
-@Entity
-@Table(name = "KUNDENSTAMM", schema = "PUBLIC", catalog = "DEMODB")
 public class Kundenstamm
 {
     @Id
