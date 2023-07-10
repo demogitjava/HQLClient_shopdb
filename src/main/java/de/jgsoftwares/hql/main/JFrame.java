@@ -140,19 +140,18 @@ public class JFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+         //Session session = this.sessionFactory.getCurrentSession();
+      //Prep work
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.getCurrentSession();
 		
-		//Get All Employees
+		//HQL example - Get All Employees
 		Transaction tx = session.beginTransaction();
-       // hutil.getSessionFactory();
-        String sqlst = jTextArea1.getText();
-        Query query = session.createQuery(sqlst);
-       
-        List list = query.list();
-        
-        
+		Query query = session.createQuery("from Users");
+		List<de.jgsoftwares.hql.model.demodb.Users> empList = query.list();
+		for(de.jgsoftwares.hql.model.demodb.Users users : empList){
+			System.out.println("List of Employees::"+users.getEmail()+","+users.getPassword());
+		}
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
