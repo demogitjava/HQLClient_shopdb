@@ -10,8 +10,6 @@ import javax.persistence.Table;
  */
 
 
-@Entity
-@Table(name = "SPRACHEN", schema = "PUBLIC", catalog = "DEMODB")
 public class Sprachen
 {
     @Id
