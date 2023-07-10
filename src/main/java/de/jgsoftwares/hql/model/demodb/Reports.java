@@ -11,8 +11,6 @@ import javax.persistence.Lob;
  * @author hoscho
  */
 
-@Entity
-@Table(name = "REPORTS", schema = "PUBLIC", catalog = "DEMODB")
 public class Reports
 {
     @Id
