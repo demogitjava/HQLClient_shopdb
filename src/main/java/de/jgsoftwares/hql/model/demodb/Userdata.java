@@ -4,8 +4,6 @@ package de.jgsoftwares.hql.model.demodb;
 import javax.persistence.*;
 
 
-@Entity
-@Table(name = "USERDATA", schema = "PUBLIC", catalog = "DEMODB")
 public class Userdata
 {
     @Id
