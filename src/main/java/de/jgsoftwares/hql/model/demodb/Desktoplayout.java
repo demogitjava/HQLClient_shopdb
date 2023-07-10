@@ -7,8 +7,7 @@ import javax.persistence.*;
  *
  * @author hoscho
  */
-@Entity
-@Table(name = "DESKTOPLAYOUT", schema = "PUBLIC", catalog = "DEMODB")
+
 public class Desktoplayout
 {
 
