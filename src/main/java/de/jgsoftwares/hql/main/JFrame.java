@@ -100,9 +100,15 @@ public class JFrame extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
+        jTextField1.setText("de.jgsoftwares.hql.model.demodb.Users");
         jTextField1.setMinimumSize(new java.awt.Dimension(40, 40));
         jTextField1.setName(""); // NOI18N
         jTextField1.setPreferredSize(new java.awt.Dimension(200, 100));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         jToolBar1.add(jTextField1);
 
         jLabel1.setText("path model class");
@@ -147,13 +153,21 @@ public class JFrame extends javax.swing.JFrame {
 		
 		//HQL example - Get All Employees
 		Transaction tx = session.beginTransaction();
-		Query query = session.createQuery("from Users");
-		List<de.jgsoftwares.hql.model.demodb.Users> empList = query.list();
-		for(de.jgsoftwares.hql.model.demodb.Users users : empList){
-			System.out.println("List of Employees::"+users.getEmail()+","+users.getPassword());
-		}
+                String stquery = jTextArea1.getText();
+		Query query = session.createQuery(stquery.toString());
+                
+                String stclassmodel = jTextField1.getText();
+                
+		List queryList = query.list();
+		//for(de.jgsoftwares.hql.model.demodb.Users users : queryList){
+		//	System.out.println("List of Employees::"+users.getEmail()+","+users.getPassword());
+		//}
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
