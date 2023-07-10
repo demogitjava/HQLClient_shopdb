@@ -100,7 +100,9 @@ public class JFrame extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
-        jTextField1.setMinimumSize(new java.awt.Dimension(40, 27));
+        jTextField1.setMinimumSize(new java.awt.Dimension(40, 40));
+        jTextField1.setName(""); // NOI18N
+        jTextField1.setPreferredSize(new java.awt.Dimension(200, 100));
         jToolBar1.add(jTextField1);
 
         jLabel1.setText("path model class");
