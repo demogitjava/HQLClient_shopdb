@@ -8,6 +8,9 @@ import javax.persistence.*;
  *
  * @author hoscho
  */
+
+@Entity
+@Table(name = "Users")
 public class Users implements Serializable
 {
     @Id

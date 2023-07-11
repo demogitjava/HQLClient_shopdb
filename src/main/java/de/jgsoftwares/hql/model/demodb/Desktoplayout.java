@@ -1,4 +1,4 @@
-package de.jgsoftware.landingpage.model.jpa.demodb;
+package de.jgsoftwares.hql.model.demodb;
 
 import javax.persistence.Entity;
 import javax.persistence.*;

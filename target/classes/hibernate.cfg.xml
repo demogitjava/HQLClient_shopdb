@@ -14,6 +14,7 @@
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
         
-      
+        <!-- demoderbydb  -->
+        <mapping class="de.jgsoftwares.hql.model.demodb.Users"/>
     </session-factory>
 </hibernate-configuration>
