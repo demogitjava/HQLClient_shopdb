@@ -23,6 +23,8 @@ public class JFrame extends javax.swing.JFrame {
      */
     
     de.jgsoftwares.hql.HibernateUtil hutil;
+    Session session;
+    
     public JFrame() {
         initComponents();
     }
@@ -148,7 +150,7 @@ public class JFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.getCurrentSession();
+		session = sessionFactory.getCurrentSession();
 		
 		//HQL example - Get All Employees
 		Transaction tx = session.beginTransaction();
@@ -161,6 +163,14 @@ public class JFrame extends javax.swing.JFrame {
 		//for(de.jgsoftwares.hql.model.demodb.Users users : queryList){
 		//	System.out.println("List of Employees::"+users.getEmail()+","+users.getPassword());
 		//}
+                
+                try
+                {
+                    session.close();
+                } catch(Exception e)
+                {
+                   System.out.print("Error close session" + "\n");
+                }
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
