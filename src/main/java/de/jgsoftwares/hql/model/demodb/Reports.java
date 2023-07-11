@@ -1,6 +1,7 @@
 package de.jgsoftwares.hql.model.demodb;
 
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,8 +11,9 @@ import javax.persistence.Lob;
  *
  * @author hoscho
  */
-
-public class Reports
+@Entity
+@Table(name = "Reports")
+public class Reports implements Serializable
 {
     @Id
     private Integer id;

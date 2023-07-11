@@ -1,5 +1,6 @@
 package de.jgsoftwares.hql.model.demodb;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,8 +10,9 @@ import javax.persistence.Table;
  * @author hoscho
  */
 
-
-public class Sprachen
+@Entity
+@Table(name = "Sprachen")
+public class Sprachen implements Serializable
 {
     @Id
     private Integer id;

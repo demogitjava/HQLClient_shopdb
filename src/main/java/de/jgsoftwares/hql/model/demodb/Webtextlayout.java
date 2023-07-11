@@ -1,10 +1,12 @@
 package de.jgsoftwares.hql.model.demodb;
 
 
+import java.io.Serializable;
 import javax.persistence.*;
 
-
-public class Webtextlayout
+@Entity
+@Table(name = "Webtextlayout")
+public class Webtextlayout implements Serializable
 {
 
     @Id

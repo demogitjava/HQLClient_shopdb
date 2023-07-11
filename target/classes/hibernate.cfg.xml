@@ -15,6 +15,17 @@
         <property name="hibernate.show_sql">true</property>
         
         <!-- demoderbydb  -->
+        <mapping class="de.jgsoftwares.hql.model.demodb.Desktoplayout"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Kundenstamm"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Reports"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Sprachen"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Useragent"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Userdata"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Userdetail"/>
         <mapping class="de.jgsoftwares.hql.model.demodb.Users"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Webtextlayout"/>
+        <mapping class="de.jgsoftwares.hql.model.demodb.Yourcompanydata"/>
+             
+      
     </session-factory>
 </hibernate-configuration>

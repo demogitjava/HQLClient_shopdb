@@ -1,6 +1,7 @@
 package de.jgsoftwares.hql.model.demodb;
 
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 
 
@@ -8,7 +9,10 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
 
-public class Useragent
+
+@Entity
+@Table(name = "Useragent")
+public class Useragent implements Serializable
 {
 
     @Id

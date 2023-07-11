@@ -1,10 +1,12 @@
 package de.jgsoftwares.hql.model.demodb;
 
 
+import java.io.Serializable;
 import javax.persistence.*;
 
-
-public class Yourcompanydata
+@Entity
+@Table(name = "Yourcompanydata")
+public class Yourcompanydata implements Serializable
 {
 
     @Id

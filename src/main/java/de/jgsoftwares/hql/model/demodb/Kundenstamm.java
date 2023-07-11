@@ -14,8 +14,9 @@ import javax.persistence.Table;
  *
  * @author hoscho
  */
-
-public class Kundenstamm
+@Entity
+@Table(name = "Kundenstamm")
+public class Kundenstamm implements Serializable
 {
     @Id
     private Long id;

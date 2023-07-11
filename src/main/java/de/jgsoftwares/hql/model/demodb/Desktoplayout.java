@@ -1,5 +1,6 @@
 package de.jgsoftwares.hql.model.demodb;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.*;
 
@@ -7,8 +8,9 @@ import javax.persistence.*;
  *
  * @author hoscho
  */
-
-public class Desktoplayout
+@Entity
+@Table(name = "Desktoplayout")
+public class Desktoplayout implements Serializable
 {
 
     @Id

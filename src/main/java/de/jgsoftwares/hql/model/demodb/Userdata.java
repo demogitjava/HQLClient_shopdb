@@ -1,10 +1,12 @@
 package de.jgsoftwares.hql.model.demodb;
 
 
+import java.io.Serializable;
 import javax.persistence.*;
 
-
-public class Userdata
+@Entity
+@Table(name = "Userdata")
+public class Userdata implements Serializable
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
