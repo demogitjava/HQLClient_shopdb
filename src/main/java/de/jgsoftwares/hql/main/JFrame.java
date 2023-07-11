@@ -47,8 +47,6 @@ public class JFrame extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jToolBar1 = new javax.swing.JToolBar();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,20 +100,6 @@ public class JFrame extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
-        jTextField1.setText("de.jgsoftwares.hql.model.demodb.Users");
-        jTextField1.setMinimumSize(new java.awt.Dimension(40, 40));
-        jTextField1.setName(""); // NOI18N
-        jTextField1.setPreferredSize(new java.awt.Dimension(200, 100));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jToolBar1.add(jTextField1);
-
-        jLabel1.setText("path model class");
-        jToolBar1.add(jLabel1);
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -161,7 +145,7 @@ public class JFrame extends javax.swing.JFrame {
                         String stquery = jTextArea1.getText();
                         Query query = session.createQuery(stquery.toString());
 
-                        String stclassmodel = jTextField1.getText();
+                        
 
                         List queryList = query.list();
                         //for(de.jgsoftwares.hql.model.demodb.Users users : queryList){
@@ -175,14 +159,9 @@ public class JFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -190,7 +169,6 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JToolBar jToolBar1;
     // End of variables declaration//GEN-END:variables
 }
