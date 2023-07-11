@@ -149,24 +149,25 @@ public class JFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		session = sessionFactory.getCurrentSession();
 		
-		//HQL example - Get All Employees
-		Transaction tx = session.beginTransaction();
-                String stquery = jTextArea1.getText();
-		Query query = session.createQuery(stquery.toString());
-                
-                String stclassmodel = jTextField1.getText();
-                
-		List queryList = query.list();
-		//for(de.jgsoftwares.hql.model.demodb.Users users : queryList){
-		//	System.out.println("List of Employees::"+users.getEmail()+","+users.getPassword());
-		//}
-                
+                SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
                 try
                 {
-                    session.close();
+                    
+                        session = sessionFactory.getCurrentSession();
+
+                        //HQL example - Get All Employees
+                        Transaction tx = session.beginTransaction();
+                        String stquery = jTextArea1.getText();
+                        Query query = session.createQuery(stquery.toString());
+
+                        String stclassmodel = jTextField1.getText();
+
+                        List queryList = query.list();
+                        //for(de.jgsoftwares.hql.model.demodb.Users users : queryList){
+                        //	System.out.println("List of Employees::"+users.getEmail()+","+users.getPassword());
+                        //}
+                            session.close();
                 } catch(Exception e)
                 {
                    System.out.print("Error close session" + "\n");
