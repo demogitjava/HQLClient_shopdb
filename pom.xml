@@ -23,4 +23,5 @@
 </dependency>
 
   </dependencies>
+    <name>HQLClient demodb</name>
 </project>
