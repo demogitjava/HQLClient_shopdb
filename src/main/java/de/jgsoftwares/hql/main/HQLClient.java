@@ -33,7 +33,7 @@ public class HQLClient
                 de.jgsoftwares.hql.main.JFrame jframe = new de.jgsoftwares.hql.main.JFrame();
               
 
-                jframe.setTitle("HQL Query");
+                jframe.setTitle("HQL Query Fibu");
                 jframe.setVisible(true);
 		jframe.setSize(800,600);
                 jframe.pack();
